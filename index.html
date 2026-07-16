@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Blog · Parvatha Varshini</title>
+<meta name="description" content="Cybersecurity notes, write-ups, and study logs from Parvatha Varshini">
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Caveat:wght@600;700&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap');
+
+  :root{
+    --bg: #100b19;
+    --surface: #1a1226;
+    --line: #2c2038;
+    --text: #e8e5ee;
+    --text-muted: #948da8;
+    --accent: #f0a8c9;
+    --accent-dim: #b5789f;
+  }
+
+  *{ box-sizing:border-box; margin:0; padding:0; }
+  html{ scroll-behavior:smooth; }
+
+  body{
+    background:
+      radial-gradient(ellipse 900px 600px at 20% 0%, rgba(60,40,90,0.55), transparent 60%),
+      radial-gradient(ellipse 900px 700px at 100% 100%, rgba(35,25,70,0.5), transparent 55%),
+      linear-gradient(160deg, #0c1424 0%, #120e22 35%, #1a1230 65%, #150c1e 100%);
+    background-attachment: fixed;
+    color:var(--text);
+    font-family:'Inter', sans-serif;
+    line-height:1.7;
+    font-size:16px;
+    -webkit-font-smoothing:antialiased;
+    min-height:100vh;
+  }
+
+  .wrap{
+    max-width:640px;
+    margin:0 auto;
+    padding:72px 24px 64px;
+  }
+
+  .back{
+    display:inline-block;
+    font-family:'Inter', sans-serif;
+    font-size:13.5px;
+    color:var(--text-muted);
+    text-decoration:none;
+    border-bottom:1px solid transparent;
+    margin-bottom:32px;
+  }
+  .back:hover{ color:var(--accent); border-color:var(--accent); }
+
+  header{ margin-bottom:44px; text-align:center; }
+
+  h1{
+    font-family:'Caveat', cursive;
+    font-weight:700;
+    font-size:52px;
+    line-height:1;
+    color:var(--text);
+    margin-bottom:10px;
+  }
+
+  .role{
+    font-family:'Inter', sans-serif;
+    font-weight:500;
+    font-size:14.5px;
+    color:var(--accent);
+    letter-spacing:0.01em;
+  }
+
+  .posts{
+    display:flex;
+    flex-direction:column;
+    gap:4px;
+  }
+
+  .post-card{
+    display:block;
+    padding:20px 4px;
+    border-bottom:1px solid var(--line);
+    text-decoration:none;
+    color:inherit;
+    transition:opacity .15s ease;
+  }
+  .post-card:first-child{ border-top:1px solid var(--line); }
+  .post-card:hover{ opacity:0.75; }
+
+  .post-date{
+    font-family:'IBM Plex Mono', monospace;
+    font-size:11.5px;
+    color:var(--text-muted);
+    letter-spacing:0.05em;
+    text-transform:uppercase;
+    margin-bottom:6px;
+  }
+
+  .post-title{
+    font-family:'Inter', sans-serif;
+    font-weight:600;
+    font-size:19px;
+    color:var(--text);
+    margin-bottom:6px;
+  }
+  .post-card:hover .post-title{ color:var(--accent); }
+
+  .post-excerpt{
+    font-family:'Inter', sans-serif;
+    font-size:14.5px;
+    color:var(--text-muted);
+  }
+
+  .empty-note{
+    font-family:'Inter', sans-serif;
+    font-size:14px;
+    color:var(--text-muted);
+    margin-top:24px;
+  }
+
+  @media (max-width:480px){
+    .wrap{ padding:48px 18px 48px; }
+    h1{ font-size:38px; }
+  }
+</style>
+</head>
+<body>
+  <div class="wrap">
+
+    <a class="back" href="/">← back to home</a>
+
+    <header>
+      <h1>Blog</h1>
+      <div class="role">notes on security, CTFs &amp; the road to SOC</div>
+    </header>
+
+    <div class="posts">
+      <a class="post-card" href="/blog/overthewire-bandit-0-12-walkthrough.html">
+        <div class="post-date">Write-up</div>
+        <div class="post-title">OverTheWire (Bandit) lvl 0–12: Walkthrough</div>
+        <div class="post-excerpt">A gamified way of learning Linux/Unix — from a basic SSH connect all the way to peeling back nine layers of nested compression by hand.</div>
+      </a>
+      <a class="post-card" href="/blog/how-i-cracked-security-plus.html">
+        <div class="post-date">Study Log</div>
+        <div class="post-title">How I Cracked CompTIA Security+</div>
+        <div class="post-excerpt">No A+, no Network+, no professional experience — just a six-week plan, a locked-in exam date, and a stuffed toy I explained TLS to. Here's the full grind.</div>
+      </a>
+    </div>
+
+    <p class="empty-note">More write-ups coming as I go.</p>
+
+  </div>
+</body>
+</html>
