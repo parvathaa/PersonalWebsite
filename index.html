@@ -3,168 +3,110 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Parvatha Varshini · Cybersecurity Researcher</title>
-<meta name="description" content="Parvatha Varshini, Cybersecurity Researcher, SOC & Reverse Engineering">
-<style>
-  @import url('https://fonts.googleapis.com/css2?family=Caveat:wght@600;700&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap');
-
-  :root{
-    --bg: #100b19;
-    --surface: #1a1226;
-    --line: #2c2038;
-    --text: #e8e5ee;
-    --text-muted: #948da8;
-    --accent: #f0a8c9;
-    --accent-dim: #b5789f;
-    --ok: #4caf7d;
-  }
-
-  *{ box-sizing:border-box; margin:0; padding:0; }
-
-  html{ scroll-behavior:smooth; }
-
-  body{
-    background:
-      radial-gradient(ellipse 900px 600px at 20% 0%, rgba(60,40,90,0.55), transparent 60%),
-      radial-gradient(ellipse 900px 700px at 100% 100%, rgba(35,25,70,0.5), transparent 55%),
-      linear-gradient(160deg, #0c1424 0%, #120e22 35%, #1a1230 65%, #150c1e 100%);
-    background-attachment: fixed;
-    color:var(--text);
-    font-family:'Inter', sans-serif;
-    line-height:1.7;
-    font-size:16px;
-    -webkit-font-smoothing:antialiased;
-    min-height:100vh;
-  }
-
-  .wrap{
-    max-width:640px;
-    margin:0 auto;
-    padding:72px 24px 64px;
-  }
-
-  header{ margin-bottom:36px; text-align:center; }
-
-  .avatar{
-    width:88px; height:88px;
-    border-radius:50%;
-    border:1px solid var(--line);
-    overflow:hidden;
-    margin:0 auto 20px;
-  }
-  .avatar img{
-    width:100%; height:100%;
-    object-fit:cover;
-    display:block;
-  }
-
-  h1{
-    font-family:'Caveat', cursive;
-    font-weight:700;
-    font-size:56px;
-    line-height:1;
-    color:var(--text);
-    margin-bottom:10px;
-  }
-
-  .role{
-    font-family:'Inter', sans-serif;
-    font-weight:500;
-    font-size:14.5px;
-    color:var(--accent);
-    letter-spacing:0.01em;
-  }
-
-  section{ margin-bottom:34px; }
-
-  p{ color:var(--text); }
-  p + p{ margin-top:14px; }
-
-  a{
-    color:var(--text);
-    text-decoration:none;
-    border-bottom:1px solid var(--accent-dim);
-    transition:border-color .15s ease, color .15s ease;
-  }
-  a:hover{ color:var(--accent); border-color:var(--accent); }
-
-  /* ---- log-style list for highlights ---- */
-  .log{
-    font-family:'Inter', sans-serif;
-    font-size:14.5px;
-    color:var(--text-muted);
-    border-left:2px solid var(--line);
-    padding-left:16px;
-  }
-  .log li{ list-style:none; margin-bottom:10px; }
-  .log li:last-child{ margin-bottom:0; }
-  .log .tag{ color:var(--accent); margin-right:8px; font-weight:600; }
-
-  /* ---- links row ---- */
-  .links{
-    display:flex;
-    flex-wrap:wrap;
-    justify-content:center;
-    gap:8px 22px;
-    font-family:'Inter', sans-serif;
-    font-weight:500;
-    font-size:14.5px;
-  }
-  .links a{ border-bottom:1px solid transparent; }
-  .links a:hover{ border-color:var(--accent); }
-  .links a::before{ content:'/ '; color:var(--text-muted); }
-
-  footer{
-    margin-top:56px;
-    padding-top:20px;
-    border-top:1px solid var(--line);
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    flex-wrap:wrap;
-    gap:10px;
-    font-family:'Inter', sans-serif;
-    font-size:12.5px;
-    color:var(--text-muted);
-  }
-
-  @media (max-width:480px){
-    .wrap{ padding:48px 18px 48px; }
-    h1{ font-size:34px; }
-  }
-
-</style>
+<title>Parvatha Varshini · Cybersecurity</title>
+<meta name="description" content="Parvatha Varshini — Cybersecurity student & aspiring SOC analyst">
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
+
+  <nav class="termnav">
+    <span class="prompt">guest@parvatha:~$</span>
+    <div class="cmds">
+      <a href="index.html" class="active">home</a>
+      <a href="projects.html">projects</a>
+      <a href="sites.html">sites</a>
+      <a href="blog.html">blog</a>
+      <a href="contact.html">contact</a>
+    </div>
+  </nav>
+
   <div class="wrap">
-
-    <header>
-      <div class="avatar"><img src="data:image/jpeg;base64,PASTE_YOUR_BASE64_IMAGE_HERE" alt="Parvatha Varshini"></div>
-      <h1>Parvatha Varshini</h1>
-      <div class="role">Cybersecurity Student &amp; Researcher | SOC Analyst</div>
-    </header>
-
-    <section>
-      <p>Hi! I'm Parvatha, just another girl whose curiosity led her to cybersecurity. I moved into security from an ECE background about two years ago and haven't looked back since. CTFs, digital forensics, and more recently reverse engineering are what I spend most of my free time on. Right now I'm wrapping up my masters in Cybersecurity from Uni of Manchester.</p>
-      <p>I've been building SOC Homelabs and various python tools, some of which are documented on my <a href="https://github.com/parvathaa" target="_blank" rel="noopener">Github</a>. Longer-term I'm aiming toward malware analysis and vulnerability research, and I'm working through HTB CPTS next.</p>
-      <p>I also make cybersecurity content on Instagram (<a href="https://www.instagram.com/0xpvee/" target="_blank" rel="noopener">@0xpvee</a>, 28k+ followers), which I started as a way of building my ability to explain my work.</p>
-      <p>I'm currently open to SOC analyst roles. Check out my <a href="/resume.pdf" target="_blank" rel="noopener">resume here</a>, or drop me an <a href="mailto:hello@p4rvatha.com">email</a> if you're hiring or just want to chat security! I still spend most of my free time building things, breaking things, reading random papers, disappearing into unnecessary rabbit holes, and learning subjects that have absolutely nothing to do with whatever I was learning the week before.</p>
-    </section>
-
-    <section>
-      <div class="links">
-        <a href="/blog/">blog</a>
-        <a href="https://www.linkedin.com/in/parvatha-cybersec/" target="_blank" rel="noopener">linkedin</a>
-        <a href="https://github.com/parvathaa" target="_blank" rel="noopener">github</a>
-        <a href="https://www.instagram.com/0xpvee/" target="_blank" rel="noopener">instagram</a>
-        <a href="https://substack.com/@0xpvee" target="_blank" rel="noopener">substack</a>
+    <div class="term-frame">
+      <div class="term-titlebar">
+        <div class="term-dots"><span></span><span></span><span></span></div>
+        <div class="fname">guest@parvatha: ~/home</div>
       </div>
-    </section>
+      <div class="term-body">
 
-    <footer>
-      <span>📍 Manchester, UK · GMT+1 (BST)</span>
-    </footer>
+        <div class="boot" id="boot"></div>
 
+        <div id="content" style="opacity:0; transition: opacity .4s ease;">
+          <h1>Parvatha Varshini</h1>
+          <div class="role">cybersecurity student &amp; aspiring SOC analyst</div>
+
+          <section class="prose-block">
+            <p>Hi! I'm Parvatha, just another girl whose curiosity led her to cybersecurity. I moved into security from an ECE background about two years ago and haven't looked back since. CTFs, digital forensics, and more recently reverse engineering are what I spend most of my free time on. Right now I'm wrapping up my masters in Cybersecurity from Uni of Manchester.</p>
+            <p>I've been building SOC homelabs and various python tools, some of which are documented on my <a href="https://github.com/parvathaa" target="_blank" rel="noopener">Github</a> — check out the <a href="projects.html">projects page</a> for a few of them. Longer-term I'm aiming toward malware analysis and vulnerability research, and I'm working through HTB CPTS next.</p>
+            <p>I also make cybersecurity content on Instagram (<a href="https://www.instagram.com/0xpvee/" target="_blank" rel="noopener">@0xpvee</a>, 28k+ followers), which I started as a way of building my ability to explain my work.</p>
+            <p>I'm currently open to SOC analyst roles — <a href="contact.html">get in touch</a> if you're hiring or just want to chat security. I still spend most of my free time building things, breaking things, reading random papers, disappearing into unnecessary rabbit holes, and learning subjects that have absolutely nothing to do with whatever I was learning the week before.</p>
+          </section>
+
+          <div class="links">
+            <a href="https://github.com/parvathaa" target="_blank" rel="noopener">github</a>
+            <a href="https://x.com/0xpvee" target="_blank" rel="noopener">x</a>
+            <a href="https://www.instagram.com/0xpvee/" target="_blank" rel="noopener">instagram</a>
+            <a href="https://substack.com/@0xpvee" target="_blank" rel="noopener">substack</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
   </div>
+
+  <footer>
+    <span>📍 Manchester, UK</span>
+    <span>parvatha@web:~$ <span class="cursor-blink">_</span></span>
+  </footer>
+
+<script>
+(function(){
+  var lines = [
+    { type: "in",  text: "whoami" },
+    { type: "out", text: "parvatha_varshini — cybersecurity student & aspiring soc analyst" },
+    { type: "in",  text: "cat status.txt" },
+    { type: "out", text: "open to soc analyst roles · wrapping up msc cybersecurity @ manchester" }
+  ];
+  var boot = document.getElementById('boot');
+  var content = document.getElementById('content');
+
+  function prefix(type){
+    return type === "in"
+      ? '<span class="in">guest@parvatha:~$</span> '
+      : '';
+  }
+
+  function typeLine(i){
+    if(i >= lines.length){
+      content.style.opacity = 1;
+      return;
+    }
+    var l = lines[i];
+    var el = document.createElement('div');
+    el.className = 'line ' + l.type;
+    el.style.animationDelay = '0s';
+    boot.appendChild(el);
+
+    var full = prefix(l.type) + '<span class="typed"></span>';
+    el.innerHTML = full;
+    var typedEl = el.querySelector('.typed');
+    var chars = l.text.split('');
+    var ci = 0;
+
+    function step(){
+      if(ci <= chars.length){
+        typedEl.textContent = chars.slice(0, ci).join('');
+        ci++;
+        setTimeout(step, l.type === 'in' ? 28 : 10);
+      } else {
+        setTimeout(function(){ typeLine(i+1); }, l.type === 'in' ? 120 : 260);
+      }
+    }
+    step();
+  }
+
+  typeLine(0);
+})();
+</script>
+
 </body>
 </html>
